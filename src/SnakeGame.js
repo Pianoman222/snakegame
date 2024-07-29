@@ -38,7 +38,7 @@ const SnakeGame = () => {
   }, [snake, direction, food, score]);
 
   const changeDirection = useCallback((e) => {
-    const newDirection = direction;
+    
     switch (e.key) {
       case 'ArrowUp':
         if (direction[1] !== 1) setDirection([0, -1]);
